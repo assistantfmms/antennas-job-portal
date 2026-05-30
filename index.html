@@ -6,13 +6,13 @@
 <title>Jim's Antennas & Security — Job Submission</title>
 <style>
   :root {
-    --blue: #1d4ed8;
-    --blue-dark: #1e40af;
-    --blue-light: #eff6ff;
+    --blue: #004F96;
+    --blue-dark: #003d75;
+    --blue-light: #e8f1fa;
     --bg: #f8fafc;
     --surface: #ffffff;
     --border: #e2e8f0;
-    --border-focus: #1d4ed8;
+    --border-focus: #004F96;
     --text: #1e293b;
     --muted: #64748b;
     --error: #ef4444;
@@ -29,13 +29,13 @@
   .header-text p { color: #64748b; font-size: 11px; margin-top: 1px; }
 
   .progress-bar { height: 3px; background: var(--border); position: sticky; top: 76px; z-index: 99; }
-  .progress-fill { height: 100%; background: var(--blue); transition: width 0.4s ease; width: 0%; }
+  .progress-fill { height: 100%; background: #004F96; transition: width 0.4s ease; width: 0%; }
 
   .container { max-width: 640px; margin: 0 auto; padding: 24px 16px; }
 
   .section { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; margin-bottom: 16px; }
   .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; }
-  .section-num { width: 28px; height: 28px; border-radius: 50%; background: var(--blue); color: #fff; font-weight: 800; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .section-num { width: 28px; height: 28px; border-radius: 50%; background: #004F96; color: #fff; font-weight: 800; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
   .section-title { font-weight: 700; font-size: 15px; color: var(--text); }
   .section-sub { font-size: 11.5px; color: var(--muted); margin-top: 1px; }
 
@@ -51,16 +51,16 @@
     font-size: 14px; color: var(--text); background: #fff; outline: none; transition: border-color 0.2s;
     -webkit-appearance: none; appearance: none;
   }
-  input:focus, select:focus, textarea:focus { border-color: var(--border-focus); box-shadow: 0 0 0 3px rgba(29,78,216,0.1); }
+  input:focus, select:focus, textarea:focus { border-color: var(--border-focus); box-shadow: 0 0 0 3px rgba(0,79,150,0.1); }
   textarea { resize: vertical; min-height: 80px; font-family: inherit; }
 
   .choice-group { display: flex; flex-direction: column; gap: 8px; }
   .choice-btn { display: flex; align-items: center; gap: 10px; padding: 11px 14px; border: 1.5px solid var(--border); border-radius: 8px; cursor: pointer; transition: all 0.15s; background: #fff; font-size: 13.5px; font-weight: 500; color: var(--text); user-select: none; }
   .choice-btn:hover { border-color: var(--blue); background: var(--blue-light); }
-  .choice-btn.selected { border-color: var(--blue); background: var(--blue-light); color: #1e40af; font-weight: 600; }
+  .choice-btn.selected { border-color: var(--blue); background: var(--blue-light); color: #003d75; font-weight: 600; }
   .choice-btn input[type="radio"] { display: none; }
   .choice-dot { width: 16px; height: 16px; border-radius: 50%; border: 2px solid var(--border); flex-shrink: 0; transition: all 0.15s; }
-  .choice-btn.selected .choice-dot { border-color: var(--blue); background: var(--blue); box-shadow: inset 0 0 0 3px #eff6ff; }
+  .choice-btn.selected .choice-dot { border-color: var(--blue); background: #004F96; box-shadow: inset 0 0 0 3px #e8f1fa; }
   .choice-btn .emoji { font-size: 16px; }
 
   .upload-zone { border: 2px dashed var(--border); border-radius: var(--radius); padding: 28px 20px; text-align: center; cursor: pointer; transition: all 0.2s; background: #fafafa; position: relative; }
@@ -78,10 +78,10 @@
 
   .upload-progress { margin-top: 10px; display: none; }
   .upload-progress-bar { height: 4px; background: var(--border); border-radius: 2px; overflow: hidden; }
-  .upload-progress-fill { height: 100%; background: var(--blue); width: 0%; transition: width 0.3s; border-radius: 2px; }
+  .upload-progress-fill { height: 100%; background: #004F96; width: 0%; transition: width 0.3s; border-radius: 2px; }
   .upload-progress-text { font-size: 11px; color: var(--muted); margin-top: 4px; }
 
-  .submit-btn { width: 100%; padding: 16px; background: var(--blue); color: #fff; border: none; border-radius: var(--radius); font-size: 15px; font-weight: 700; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 8px; }
+  .submit-btn { width: 100%; padding: 16px; background: #004F96; color: #fff; border: none; border-radius: var(--radius); font-size: 15px; font-weight: 700; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 8px; }
   .submit-btn:hover { background: var(--blue-dark); transform: translateY(-1px); }
   .submit-btn:active { transform: translateY(0); }
   .submit-btn:disabled { background: #cbd5e1; cursor: not-allowed; transform: none; }
