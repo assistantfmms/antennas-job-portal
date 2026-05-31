@@ -206,83 +206,145 @@
         <div class="section-num">3</div>
         <div>
           <div class="section-title">Job Type</div>
-          <div class="section-sub">Select the primary type of work completed</div>
+          <div class="section-sub">Select the type of work completed — antenna or security</div>
         </div>
       </div>
       <div class="field">
         <div class="choice-group" id="jobTypeGroup">
-          <label class="choice-btn" id="jt-antenna">
-            <input type="radio" name="jobType" value="antenna">
+
+          <div style="margin: 0 0 4px; font-size: 11px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.8px; padding-left: 2px;">Antenna &amp; Signal</div>
+          <label class="choice-btn" id="jt-tv-antenna">
+            <input type="radio" name="jobType" value="tv_antenna_installation">
             <div class="choice-dot"></div>
             <span class="emoji">📡</span>
-            Antenna
+            TV Antenna Installation
           </label>
-          <label class="choice-btn" id="jt-commercial">
-            <input type="radio" name="jobType" value="antenna_commercial_building">
+          <label class="choice-btn" id="jt-antenna-mast">
+            <input type="radio" name="jobType" value="antenna_mast_installation">
             <div class="choice-dot"></div>
-            <span class="emoji">🏢</span>
-            Antenna Commercial Building
+            <span class="emoji">🗼</span>
+            Antenna &amp; Mast Installation
           </label>
-          <label class="choice-btn" id="jt-data">
-            <input type="radio" name="jobType" value="antenna_data_wifi">
-            <div class="choice-dot"></div>
-            <span class="emoji">🌐</span>
-            Antenna Data / WiFi
-          </label>
-          <label class="choice-btn" id="jt-foxtel">
-            <input type="radio" name="jobType" value="antenna_foxtel">
-            <div class="choice-dot"></div>
-            <span class="emoji">📺</span>
-            Antenna Foxtel
-          </label>
-          <label class="choice-btn" id="jt-hometheatre">
-            <input type="radio" name="jobType" value="antenna_home_theatre">
-            <div class="choice-dot"></div>
-            <span class="emoji">🎬</span>
-            Antenna Home Theatre
-          </label>
-          <label class="choice-btn" id="jt-mobilebooster">
-            <input type="radio" name="jobType" value="antenna_mobile_booster">
+          <label class="choice-btn" id="jt-antenna-mast-amp">
+            <input type="radio" name="jobType" value="antenna_mast_amplifier_installation">
             <div class="choice-dot"></div>
             <span class="emoji">📶</span>
-            Antenna Mobile Phone Booster
+            Antenna Mast &amp; Amplifier Installation
           </label>
-          <label class="choice-btn" id="jt-noaddress">
-            <input type="radio" name="jobType" value="antenna_no_address">
-            <div class="choice-dot"></div>
-            <span class="emoji">📡</span>
-            Antenna No Address
-          </label>
-          <label class="choice-btn" id="jt-opticomm">
-            <input type="radio" name="jobType" value="antenna_opticomm">
+          <label class="choice-btn" id="jt-digital-splitter">
+            <input type="radio" name="jobType" value="digital_splitter_installation">
             <div class="choice-dot"></div>
             <span class="emoji">🔌</span>
-            Antenna Opticomm
+            Digital Splitter Installation
           </label>
-          <label class="choice-btn" id="jt-nbn">
-            <input type="radio" name="jobType" value="antenna_phone_nbn_relocation">
-            <div class="choice-dot"></div>
-            <span class="emoji">☎️</span>
-            Antenna Phone / NBN Relocation
-          </label>
-          <label class="choice-btn" id="jt-satellite">
-            <input type="radio" name="jobType" value="antenna_satellite">
-            <div class="choice-dot"></div>
-            <span class="emoji">🛰️</span>
-            Antenna Satellite
-          </label>
-          <label class="choice-btn" id="jt-starlink">
-            <input type="radio" name="jobType" value="antenna_starlink_fixed_wireless">
-            <div class="choice-dot"></div>
-            <span class="emoji">🌐</span>
-            Antenna Starlink Fixed Wireless
-          </label>
-          <label class="choice-btn" id="jt-tvwallmount">
-            <input type="radio" name="jobType" value="antenna_tv_wall_mount">
+
+          <div style="margin: 8px 0 4px; font-size: 11px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.8px; padding-left: 2px;">Television</div>
+          <label class="choice-btn" id="jt-tv-wall-mount">
+            <input type="radio" name="jobType" value="wall_mounted_television_installation">
             <div class="choice-dot"></div>
             <span class="emoji">📺</span>
-            Antenna TV Wall Mount
+            Wall Mounted Television Installation
           </label>
+          <label class="choice-btn" id="jt-soundbar-tv">
+            <input type="radio" name="jobType" value="soundbar_tv_installation">
+            <div class="choice-dot"></div>
+            <span class="emoji">🔊</span>
+            Soundbar &amp; TV Installation
+          </label>
+
+          <div style="margin: 8px 0 4px; font-size: 11px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.8px; padding-left: 2px;">Satellite</div>
+          <label class="choice-btn" id="jt-foxtel-dish">
+            <input type="radio" name="jobType" value="foxtel_dish_installation">
+            <div class="choice-dot"></div>
+            <span class="emoji">🛰️</span>
+            Foxtel Dish Installation
+          </label>
+          <label class="choice-btn" id="jt-vast-satellite">
+            <input type="radio" name="jobType" value="vast_satellite_tv_installation">
+            <div class="choice-dot"></div>
+            <span class="emoji">📡</span>
+            VAST Satellite TV Installation
+          </label>
+
+          <div style="margin: 8px 0 4px; font-size: 11px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.8px; padding-left: 2px;">Internet &amp; Networking</div>
+          <label class="choice-btn" id="jt-starlink">
+            <input type="radio" name="jobType" value="starlink_installation">
+            <div class="choice-dot"></div>
+            <span class="emoji">🌐</span>
+            Starlink Installation
+          </label>
+          <label class="choice-btn" id="jt-nbn-relocation">
+            <input type="radio" name="jobType" value="nbn_relocation_installation">
+            <div class="choice-dot"></div>
+            <span class="emoji">☎️</span>
+            NBN Relocation Installation
+          </label>
+          <label class="choice-btn" id="jt-wifi-access-point">
+            <input type="radio" name="jobType" value="wifi_access_point_installation">
+            <div class="choice-dot"></div>
+            <span class="emoji">📶</span>
+            WiFi Access Point Installation
+          </label>
+          <label class="choice-btn" id="jt-solar-p2p">
+            <input type="radio" name="jobType" value="solar_point_to_point_installation">
+            <div class="choice-dot"></div>
+            <span class="emoji">☀️</span>
+            Solar &amp; Point to Point Installation
+          </label>
+
+          <div style="margin: 8px 0 4px; font-size: 11px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.8px; padding-left: 2px;">CCTV &amp; Security Cameras</div>
+          <label class="choice-btn" id="jt-cctv-security">
+            <input type="radio" name="jobType" value="cctv_security_installation">
+            <div class="choice-dot"></div>
+            <span class="emoji">📹</span>
+            CCTV Security Installation
+          </label>
+          <label class="choice-btn" id="jt-solar-camera">
+            <input type="radio" name="jobType" value="solar_security_camera_installation">
+            <div class="choice-dot"></div>
+            <span class="emoji">☀️</span>
+            Solar Security Camera Installation
+          </label>
+          <label class="choice-btn" id="jt-cctv-lockbox">
+            <input type="radio" name="jobType" value="cctv_lockbox_installation">
+            <div class="choice-dot"></div>
+            <span class="emoji">🔒</span>
+            CCTV Lockbox Installation
+          </label>
+
+          <div style="margin: 8px 0 4px; font-size: 11px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.8px; padding-left: 2px;">Alarms &amp; Intercoms</div>
+          <label class="choice-btn" id="jt-wireless-alarm">
+            <input type="radio" name="jobType" value="wireless_alarm_installation">
+            <div class="choice-dot"></div>
+            <span class="emoji">🔔</span>
+            Wireless Alarm Installation
+          </label>
+          <label class="choice-btn" id="jt-intercom-alarm">
+            <input type="radio" name="jobType" value="intercom_alarm_installation">
+            <div class="choice-dot"></div>
+            <span class="emoji">🔐</span>
+            Intercom &amp; Alarm Installation
+          </label>
+          <label class="choice-btn" id="jt-video-doorbell">
+            <input type="radio" name="jobType" value="video_doorbell_installation">
+            <div class="choice-dot"></div>
+            <span class="emoji">🚪</span>
+            Video Doorbell Installation
+          </label>
+
+          <div style="margin: 8px 0 4px; font-size: 11px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.8px; padding-left: 2px;">Other</div>
+          <label class="choice-btn" id="jt-custom">
+            <input type="radio" name="jobType" value="custom">
+            <div class="choice-dot"></div>
+            <span class="emoji">✏️</span>
+            Other / Custom Job Type
+          </label>
+          <div id="customJobTypeWrap" style="display:none; margin-top: 8px;">
+            <input type="text" id="customJobType" placeholder="e.g. EV Car Charger Installation" maxlength="80">
+            <div class="hint">Enter the job type heading exactly as it should appear on the post</div>
+            <div class="error-msg" id="err-customjobtype">Please describe the job type</div>
+          </div>
+
         </div>
         <div class="error-msg" id="err-jobtype">Please select the job type</div>
       </div>
@@ -432,10 +494,13 @@
   let selectedPhoto = null;
 
   // ── JOB TYPE HANDLERS ──
-  ['jt-antenna','jt-commercial','jt-data','jt-foxtel','jt-hometheatre','jt-mobilebooster','jt-noaddress','jt-opticomm','jt-nbn','jt-satellite','jt-starlink','jt-tvwallmount'].forEach(id => {
+  ['jt-tv-antenna','jt-antenna-mast','jt-antenna-mast-amp','jt-digital-splitter','jt-tv-wall-mount','jt-soundbar-tv','jt-foxtel-dish','jt-vast-satellite','jt-starlink','jt-nbn-relocation','jt-wifi-access-point','jt-solar-p2p','jt-cctv-security','jt-solar-camera','jt-cctv-lockbox','jt-wireless-alarm','jt-intercom-alarm','jt-video-doorbell','jt-custom'].forEach(id => {
     document.getElementById(id).addEventListener('click', () => {
       document.querySelectorAll('#jobTypeGroup .choice-btn').forEach(b => b.classList.remove('selected'));
       document.getElementById(id).classList.add('selected');
+      const isCustom = id === 'jt-custom';
+      document.getElementById('customJobTypeWrap').style.display = isCustom ? 'block' : 'none';
+      if (!isCustom) document.getElementById('err-customjobtype').style.display = 'none';
       updateProgress();
     });
   });
@@ -470,7 +535,9 @@
     if (document.getElementById('franchisee').value) filled++;
     if (document.getElementById('suburb').value) filled++;
     if (document.getElementById('state').value) filled++;
-    if (document.querySelector('input[name="jobType"]:checked')) filled++;
+    const checkedJob = document.querySelector('input[name="jobType"]:checked');
+    const customVal = document.getElementById('customJobType').value.trim();
+    if (checkedJob && (checkedJob.value !== 'custom' || customVal)) filled++;
     if (selectedPhoto) filled++;
     document.getElementById('progressFill').style.width = `${(filled / total) * 100}%`;
   }
@@ -492,6 +559,11 @@
     const jobType = document.querySelector('input[name="jobType"]:checked');
     document.getElementById('err-jobtype').style.display = jobType ? 'none' : 'block';
     if (!jobType) valid = false;
+    if (jobType && jobType.value === 'custom') {
+      const customVal = document.getElementById('customJobType').value.trim();
+      document.getElementById('err-customjobtype').style.display = customVal ? 'none' : 'block';
+      if (!customVal) valid = false;
+    }
 
     if (!selectedPhoto) { document.getElementById('err-photo').style.display = 'block'; valid = false; }
     else { document.getElementById('err-photo').style.display = 'none'; }
@@ -523,7 +595,7 @@
 
     try {
       const submissionId = Date.now().toString();
-      const photoRef = ref(storage, `job_photos/${submissionId}/${selectedPhoto.name}`);
+      const photoRef = ref(storage, `antennas/job_photos/${submissionId}/${selectedPhoto.name}`);
       const uploadTask = uploadBytesResumable(photoRef, selectedPhoto);
 
       const photoURL = await new Promise((resolve, reject) => {
@@ -544,14 +616,18 @@
 
       btnText.textContent = 'Saving submission...';
 
-      await addDoc(collection(db, 'job_submissions'), {
+      await addDoc(collection(db, 'submissions', 'antennas', 'jobs'), {
         submission_id: submissionId,
         division: 'antennas',
         timestamp: serverTimestamp(),
         franchisee: document.getElementById('franchisee').value,
         suburb: document.getElementById('suburb').value.trim(),
         state: document.getElementById('state').value,
-        job_type: document.querySelector('input[name="jobType"]:checked').value,
+        job_type: (() => {
+          const checked = document.querySelector('input[name="jobType"]:checked');
+          if (checked.value === 'custom') return document.getElementById('customJobType').value.trim();
+          return checked.value;
+        })(),
         num_points: document.getElementById('numPoints').value || null,
         customer_type: document.getElementById('customerType').value || null,
         equipment_brand: document.getElementById('equipmentBrand').value || null,
