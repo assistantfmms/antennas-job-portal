@@ -616,7 +616,7 @@
 
       btnText.textContent = 'Saving submission...';
 
-      await addDoc(collection(db, 'submissions', 'antennas', 'jobs'), {
+      await addDoc(collection(db, 'job_submissions'), {
         submission_id: submissionId,
         division: 'antennas',
         timestamp: serverTimestamp(),
